@@ -1,0 +1,17 @@
+"""
+moltiplication element to element for 
+python 
+
+in the exemple:  actualisation of future cash flow 
+please NOTE : I have created two line in 
+"""
+actualization_factor = [1 , 0.98, 0.97 ]
+Future_cash_flows = [ 100 , 102 , 105 ]
+listres = [] 
+for X in range(3) :
+    a = actualization_factor[X]
+    b = float(Future_cash_flows[X]) 
+    res = a * b
+    listres.append( res) 
+
+print (listres)
