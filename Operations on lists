@@ -3,7 +3,8 @@ moltiplication element to element for
 python 
 
 in the exemple:  actualisation of future cash flow 
-please NOTE : I have created two line in 
+please NOTE : I have created two variables (a and b) that are to be considered as temporary 
+I am looking for a more efficient way to multiply the lists value element by element
 """
 actualization_factor = [1 , 0.98, 0.97 ]
 Future_cash_flows = [ 100 , 102 , 105 ]
