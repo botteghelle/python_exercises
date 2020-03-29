@@ -75,3 +75,31 @@ def find_digit_of_life() :
     print("digit_of_life is :" , digit_of_life)
 
 find_digit_of_life()
+
+
+# verify if the second word is present in the first 
+## letters are in the order
+## no case sensitive 
+
+
+def is_in_the_word ():
+    big_word = input ("Please enter the word where I have to search ")
+    word_to_search = input("Enter the string I have to look for ")
+    big_word = big_word.replace(' ','').upper()
+    word_to_search= word_to_search.replace(' ','').upper()
+    i = 0 
+    word_found = ""
+    while i < len(word_to_search):
+        substring_to_search =(word_to_search[i:1+i])
+        if (big_word.find(substring_to_search) > -1 ): 
+            word_found = word_found + substring_to_search
+        else: print("not found")
+        i += 1
+    if (word_found == word_to_search):
+        print("the word is contained in the indicated word")
+        
+
+
+is_in_the_word()
+
+
