@@ -29,5 +29,35 @@ print(string_derived_2)
 
 if (string_derived_2[::-1] == string_derived_1):
     print("It\'s a palindrome")
+ 
 
+
+## let's try to find anagrams
+
+
+def find_anagrams ():
+    stringa_1 = input("Enter the first word please:")
+    stringa_2 = input("Enter the second word please:")
+    stringa_1 =  stringa_1.replace(' ' , ' ').upper()
+    stringa_2 =  stringa_2.replace(' ' , ' ').upper()
+    i = 0 
+    stringa_1_ord = 0
+    while i <= len(stringa_1):
+        substring =(stringa_1[i:1+i])
+        if i < len(stringa_1):
+            stringa_1_ord = stringa_1_ord + ord(substring)
+        i += 1
+    stringa_2_ord = 0
+    i = 0 
+    while i <= len(stringa_2):
+        substring =(stringa_2[i:1+i])
+        if i < len(stringa_2):
+            stringa_2_ord = stringa_2_ord + ord(substring)
+        i += 1
+    if (stringa_1_ord == stringa_2_ord):
+        print("thos are anagrams!")
+    else: (print("no, those are not anagrams"))
+
+
+find_anagrams()
 
