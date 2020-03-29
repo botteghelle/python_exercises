@@ -13,12 +13,21 @@ print(alpha[::2])
 
 print(alpha[1: :2]) 
 
-data = [['12 et 10', 10], ['13 et 1', 1], ['14', 14]]
-
-prova = pd.DataFrame ( data, columns = ['stringa', 'lob' ])
 
 
-prova['stringa'] = prova['stringa'].str.replace(' ' , '')
-print(prova)
-parte_1 = prova['stringa'].str[:2]
-print(parte_1)
+#### try tpo find polidromes!!!
+
+
+string_2 =  "kayak"
+print(len(string))
+string_2 = string_2.replace(' ' , '')
+
+string_derived_1 = string_2[:round((len(string_2)/2)+0.5)].upper()
+string_derived_2 = string_2[round((len(string_2)/2)-1)::-1].upper()
+print(string_derived_1)
+print(string_derived_2)
+
+if (string_derived_2[::-1] == string_derived_1):
+    print("It\'s a palindrome")
+
+
