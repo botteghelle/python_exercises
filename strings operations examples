@@ -61,7 +61,7 @@ def find_anagrams ():
 
 find_anagrams()
 
-
+## let's find the digit of life
 
 def find_digit_of_life() : 
     bith_date = input("Please enter your birth date :")
