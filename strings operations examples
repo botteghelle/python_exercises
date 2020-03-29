@@ -61,3 +61,17 @@ def find_anagrams ():
 
 find_anagrams()
 
+
+
+def find_digit_of_life() : 
+    bith_date = input("Please enter your birth date :")
+    bith_date = str(bith_date)
+    I = 0
+    digit_of_life = 0
+    while (I < len(bith_date) ): 
+        substring =(bith_date[I:1+I])
+        digit_of_life = digit_of_life +   (int(substring))
+        I += 1
+    print("digit_of_life is :" , digit_of_life)
+
+find_digit_of_life()
