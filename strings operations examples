@@ -1,0 +1,24 @@
+alpha = "abdefg"
+
+
+import pandas as pd
+
+print(alpha[:3])
+
+print(alpha[3:-2])
+
+print(alpha[-3:4])
+
+print(alpha[::2])
+
+print(alpha[1: :2]) 
+
+data = [['12 et 10', 10], ['13 et 1', 1], ['14', 14]]
+
+prova = pd.DataFrame ( data, columns = ['stringa', 'lob' ])
+
+
+prova['stringa'] = prova['stringa'].str.replace(' ' , '')
+print(prova)
+parte_1 = prova['stringa'].str[:2]
+print(parte_1)
