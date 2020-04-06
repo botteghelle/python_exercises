@@ -1,0 +1,23 @@
+# It creates a backup 
+# of a selected file
+
+import os
+import datetime
+import sys
+import tkinter as tk
+from shutil import copy2
+from tkinter.filedialog import askopenfilename
+from tkinter import messagebox
+if (sys.platform == 'linux') :
+    folder_connector = "/"
+else : folder_connector = "\\"
+
+name_for_the_folder= str(os.getcwd()) + folder_connector + "your_bkp"   +str((str.replace(str.replace(str.replace(str.replace(str(datetime.datetime.now()), ':','_'),'-','_'),'.','_'),' ','_')))
+os.makedirs(name_for_the_folder)
+
+root = tk.Tk()
+root.withdraw()
+filename= askopenfilename()
+copy2(filename,( name_for_the_folder + folder_connector + filename.split(folder_connector)[-1]))
+root.destroy()
+root.mainloop()
