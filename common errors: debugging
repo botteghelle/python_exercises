@@ -1,0 +1,9 @@
+##########################################
+TypeError: can't multiply sequence by non-int of type 'float'
+
+It means that you are multiplying a string for a float. As the discussion here: 
+
+https://stackoverflow.com/questions/485789/why-do-i-get-typeerror-cant-multiply-sequence-by-non-int-of-type-float
+
+Solution:  just convert the string to a proper format
+
