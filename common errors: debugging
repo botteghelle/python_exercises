@@ -7,3 +7,18 @@ https://stackoverflow.com/questions/485789/why-do-i-get-typeerror-cant-multiply-
 
 Solution:  just convert the string to a proper format
 
+
+#################################
+
+i = 0 
+if (df.at  [ i, 'Credit_Rating'].upper() == 'UNRATED') : print("a")
+
+KeyError: 0
+
+it seems that the sintax is regular... AND IT IS! only you do not have index 0 on that, 
+in the end of the day: you have always to check at your indexes!
+
+a smart correction just because in this case you want the first: 
+
+i = min(UNRATED_BUT_SOLVENCY_RATIO.index)
+if (df.at  [ i, 'Credit_Rating'].upper() == 'UNRATED') : print("a")
